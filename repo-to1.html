@@ -30,10 +30,10 @@
 
 
   //正二十面体
-var IcosahedronGeometry = new THREE.IcosahedronGeometry(200, 0); 
-var IcosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0xd66b00 } );
+var icosahedronGeometry = new THREE.IcosahedronGeometry(200, 0); 
+var icosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0xd66b00 } );
 var Icosahedron = new THREE.Mesh( IcosahedronGeometry, IcosahedronMaterial );
-torus.position.set( 0.5, 0, -50);
+Icosahedron.position.set( 0.5, 0, -50);
 scene.add( Icosahedron );
 
 //球
