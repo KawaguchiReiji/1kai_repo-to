@@ -31,7 +31,7 @@
 
 //正二十面体
 var icosahedronGeometry = new THREE.IcosahedronGeometry(5, 0); 
-var icosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0x800080 } );
+var icosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0x800080 ,wireframe: true} );
 var icosahedron = new THREE.Mesh( icosahedronGeometry, icosahedronMaterial );
 icosahedron.position.set( 0.5, 0, -30);
 scene.add( icosahedron );
@@ -69,11 +69,12 @@ sphere4.position.set( -2.5, 0, -10 );
 scene.add( sphere3 );
 scene.add( sphere4 );
 
-//平面
-/*var plane = new THREE.PlaneGeometry( 10, 10, 1 ,1 ); 
-var plane = new THREE. MeshBasicMaterial( {color: 0x93C54B } );
-plane.position.set( 0.5, 0, -10 );
-scene.add( plane );*/
+//球
+var sphereGeometry = new THREE.SphereGeometry( 2.5, 32, 32 );
+var sphereMaterial5 = new THREE. MeshBasicMaterial( {color: 0x800080 } );
+var sphere5 = new THREE.Mesh( sphereGeometry, sphereMaterial5 );
+sphere5.position.set( 0.5, 0, -30);
+scene.add( sphere5 );*/
     
     // 平行光源1
     var directionalLight1 = new THREE.DirectionalLight(0xffffff);
@@ -97,6 +98,7 @@ scene.add( plane );*/
       sphere4.rotation.y += -0.02;
       icosahedron2.rotation.y += -0.03;
       icosahedron3.rotation.y += 0.02;
+      sphere5.rotation.y += -0.03;
       
       sphere1.position.x +=-0.006;
       sphere2.position.x +=0.006;
@@ -110,6 +112,7 @@ scene.add( plane );*/
       sphere2.position.z +=-0.01;
       sphere3.position.z +=-0.01;
       sphere4.position.z +=-0.01;
+      sphere5.position.z +=-0.03;
   
       renderer.render(scene, camera);
     };
