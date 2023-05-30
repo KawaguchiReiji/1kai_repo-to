@@ -33,19 +33,19 @@
 var icosahedronGeometry = new THREE.IcosahedronGeometry(5, 0); 
 var icosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0x800080 ,wireframe: true} );
 var icosahedron = new THREE.Mesh( icosahedronGeometry, icosahedronMaterial );
-icosahedron.position.set( 0.5, 0, -30);
+icosahedron.position.set( 0, 0, -30);
 scene.add( icosahedron );
 
 var icosahedronGeometry2 = new THREE.IcosahedronGeometry(5.5, 0); 
 var icosahedronMaterial2 = new THREE. MeshPhongMaterial( { color: 0x800080,wireframe: true} );
 var icosahedron2 = new THREE.Mesh( icosahedronGeometry2, icosahedronMaterial2 );
-icosahedron2.position.set( 0.5, 0, -30);
+icosahedron2.position.set( 0, 0, -30);
 scene.add( icosahedron2 );
     
 var icosahedronGeometry2 = new THREE.IcosahedronGeometry(5.5, 0); 
 var icosahedronMaterial3 = new THREE. MeshPhongMaterial( { color: 0xffffff,wireframe: true} );
 var icosahedron3 = new THREE.Mesh( icosahedronGeometry2, icosahedronMaterial3 );
-icosahedron3.position.set( 0.5, 0, -30);
+icosahedron3.position.set( 0, 0, -30);
 scene.add( icosahedron3 );
 
 //球
@@ -70,10 +70,10 @@ scene.add( sphere3 );
 scene.add( sphere4 );
 
 //球
-var sphereGeometry = new THREE.SphereGeometry( 4.3, 32, 32 );
+var sphereGeometry = new THREE.SphereGeometry( 4.4, 32, 32 );
 var sphereMaterial5 = new THREE. MeshBasicMaterial( {color: 0x800080 } );
 var sphere5 = new THREE.Mesh( sphereGeometry, sphereMaterial5 );
-sphere5.position.set( 0.5, 0, -30);
+sphere5.position.set( 0, 0, -30);
 scene.add( sphere5 );
     
     // 平行光源1
@@ -105,9 +105,9 @@ scene.add( sphere5 );
       sphere3.position.x +=-0.006;
       sphere4.position.x +=0.006;
       
-      icosahedron.position.z +=0.04;
-      icosahedron2.position.z +=0.04;
-      icosahedron3.position.z +=0.04;
+      icosahedron.position.z +=0.045;
+      icosahedron2.position.z +=0.045;
+      icosahedron3.position.z +=0.045;
       sphere1.position.z +=-0.01;
       sphere2.position.z +=-0.01;
       sphere3.position.z +=-0.01;
