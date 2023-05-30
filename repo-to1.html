@@ -30,26 +30,26 @@
 
 
 //正二十面体
-var icosahedronGeometry = new THREE.IcosahedronGeometry(5, 0); 
+var icosahedronGeometry = new THREE.IcosahedronGeometry(1.5, 0); 
 var icosahedronMaterial = new THREE. MeshPhongMaterial( { color: 0x800080 ,wireframe: true} );
 var icosahedron = new THREE.Mesh( icosahedronGeometry, icosahedronMaterial );
 icosahedron.position.set( 0, 0, -30);
 scene.add( icosahedron );
 
-var icosahedronGeometry2 = new THREE.IcosahedronGeometry(5.5, 0); 
+var icosahedronGeometry2 = new THREE.IcosahedronGeometry(1.5, 0); 
 var icosahedronMaterial2 = new THREE. MeshPhongMaterial( { color: 0x800080,wireframe: true} );
 var icosahedron2 = new THREE.Mesh( icosahedronGeometry2, icosahedronMaterial2 );
 icosahedron2.position.set( 0, 0, -30);
 scene.add( icosahedron2 );
     
-var icosahedronGeometry2 = new THREE.IcosahedronGeometry(5.5, 0); 
+var icosahedronGeometry2 = new THREE.IcosahedronGeometry(1.5, 0); 
 var icosahedronMaterial3 = new THREE. MeshPhongMaterial( { color: 0xffffff,wireframe: true} );
 var icosahedron3 = new THREE.Mesh( icosahedronGeometry2, icosahedronMaterial3 );
 icosahedron3.position.set( 0, 0, -30);
 scene.add( icosahedron3 );
 
 //球
-var sphereGeometry = new THREE.SphereGeometry( 1.5, 32, 32 ); 
+var sphereGeometry = new THREE.SphereGeometry( 2.5, 32, 32 ); 
 var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0x0000ff } );
 var sphereMaterial2 = new THREE. MeshPhongMaterial( {color: 0xff0000 } );
 var sphere1 = new THREE.Mesh( sphereGeometry, sphereMaterial );
@@ -59,7 +59,7 @@ sphere2.position.set( -2.5, 0, -10 );
 scene.add( sphere1 );
 scene.add( sphere2 );
 
-var sphereGeometry = new THREE.SphereGeometry( 1.6, 32, 32 ); 
+var sphereGeometry = new THREE.SphereGeometry( 2.6, 32, 32 ); 
 var sphereMaterial3 = new THREE. MeshPhongMaterial( {color: 0x0000ff,wireframe: true} );
 var sphereMaterial4 = new THREE. MeshPhongMaterial( {color: 0xff0000,wireframe: true} );
 var sphere3 = new THREE.Mesh( sphereGeometry, sphereMaterial3 );
